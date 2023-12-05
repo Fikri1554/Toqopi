@@ -21,4 +21,6 @@ class Product_Masuk extends Model
     {
         return $this->belongsTo(Supplier::class);
     }
+
+    
 }

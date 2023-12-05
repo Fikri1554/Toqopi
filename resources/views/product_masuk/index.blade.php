@@ -22,8 +22,8 @@
 
         <div class="box-header">
             <a onclick="addForm()" class="btn btn-primary" >Add Products In</a>
-            <a href="{{ route('exportPDF.productMasukAll') }}" class="btn btn-danger">Export PDF</a>
-            <a href="{{ route('exportExcel.productMasukAll') }}" class="btn btn-success">Export Excel</a>
+            <!-- <a href="{{ route('exportPDF.productMasukAll') }}" class="btn btn-danger">Export PDF</a>
+            <a href="{{ route('exportExcel.productMasukAll') }}" class="btn btn-success">Export Excel</a> -->
         </div>
 
 
@@ -48,11 +48,11 @@
         <!-- /.box-body -->
     </div>
 
-    <div class="box col-md-6">
+    <!-- <div class="box col-md-6">
 
         <div class="box-header">
             <h3 class="box-title">Export Invoice</h3>
-        </div>
+        </div> -->
 
     {{--<div class="box-header">--}}
     {{--<a onclick="addForm()" class="btn btn-primary" >Add Products Out</a>--}}
@@ -61,7 +61,7 @@
     {{--</div>--}}
 
     <!-- /.box-header -->
-        <div class="box-body">
+        <!-- <div class="box-body">
             <table id="invoice" class="table table-striped">
                 <thead>
                 <tr>
@@ -87,7 +87,7 @@
                     </tbody>
                 @endforeach
             </table>
-        </div>
+        </div> -->
         <!-- /.box-body -->
     </div>
 

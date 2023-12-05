@@ -15,8 +15,8 @@
 
         <div class="box-header">
             <a onclick="addForm()" class="btn btn-primary" >Add Categories</a>
-            <a href="{{ route('exportPDF.categoriesAll') }}" class="btn btn-danger">Export PDF</a>
-            <a href="{{ route('exportExcel.categoriesAll') }}" class="btn btn-success">Export Excel</a>
+            <!-- <a href="{{ route('exportPDF.categoriesAll') }}" class="btn btn-danger">Export PDF</a>
+            <a href="{{ route('exportExcel.categoriesAll') }}" class="btn btn-success">Export Excel</a> -->
         </div>
 
 

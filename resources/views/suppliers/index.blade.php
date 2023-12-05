@@ -14,9 +14,9 @@
         </div>
 
         <div class="box-header">
-            <a onclick="addForm()" class="btn btn-primary" >Add Customers</a>
-            <a href="{{ route('exportPDF.suppliersAll') }}" class="btn btn-danger">Export PDF</a>
-            <a href="{{ route('exportExcel.suppliersAll') }}" class="btn btn-success">Export Excel</a>
+            <a onclick="addForm()" class="btn btn-primary" >Add Supplier</a>
+            <!-- <a href="{{ route('exportPDF.suppliersAll') }}" class="btn btn-danger">Export PDF</a>
+            <a href="{{ route('exportExcel.suppliersAll') }}" class="btn btn-success">Export Excel</a> -->
         </div>
 
 
@@ -39,9 +39,9 @@
         <!-- /.box-body -->
     </div>
 
-    @include('suppliers.form_import')
+    
 
-    @include('suppliers.form')
+    @include('suppliers.form') 
 
 @endsection
 

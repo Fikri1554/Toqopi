@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\controller_produk;
+use App\Http\Controllers\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,7 @@ use App\Http\Controllers\controller_produk;
  */
 
 Route::get('/', function () {
-	return view('Front_end/cs_index');
+	return view('Front_end/home');
 });
 
 Route::get('/about', function () {
@@ -23,10 +23,6 @@ Route::get('/about', function () {
 Route::get('/kontak', function () {
 	return view('Front_end/kontak');
 });
-
-// Route::get('/kepo', function () {
-// 	return view('Front_end/oke');
-// });
 
 Route::get('/loginadministrator', function () {
 	return view('auth.login');
@@ -67,6 +63,8 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::resource('products', 'ProductController');
 	Route::get('/apiProducts', 'ProductController@apiProducts')->name('api.products');
+	// Route::get('getProduct', 'ProductController@getProduct')->name('getProduct');
+	
 
 	Route::resource('productsOut', 'ProductKeluarController');
 	Route::get('/apiProductsOut', 'ProductKeluarController@apiProductsOut')->name('api.productsOut');
@@ -87,3 +85,4 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::get('/product', 'controller_produk@show')->name('show');
+Route::get('detailProduk/{id}', 'detail_controller@detailProduk')->name('detailProduk');

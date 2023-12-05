@@ -130,15 +130,15 @@ class CategoryController extends Controller
             ->rawColumns(['action'])->make(true);
     }
 
-    public function exportCategoriesAll()
-    {
-        $categories = Category::all();
-        $pdf = PDF::loadView('categories.CategoriesAllPDF',compact('categories'));
-        return $pdf->download('categories.pdf');
-    }
+    // public function exportCategoriesAll()
+    // {
+    //     $categories = Category::all();
+    //     $pdf = PDF::loadView('categories.CategoriesAllPDF',compact('categories'));
+    //     return $pdf->download('categories.pdf');
+    // }
 
-    public function exportExcel()
-    {
-        return (new ExportCategories())->download('categories.xlsx');
-    }
+    // public function exportExcel()
+    // {
+    //     return (new ExportCategories())->download('categories.xlsx');
+    // }
 }

@@ -18,9 +18,10 @@ class CreateProductsTable extends Migration
             $table->integer('category_id')->unsigned();
             $table->string('nama');
             $table->integer('harga');
-            $table->string('image')->default(null);
+            $table->string('image');
             $table->integer('qty');
-            
+            $table->string('desc');
+            $table->string('links');
             $table->timestamps();
 
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');

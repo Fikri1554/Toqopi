@@ -43,6 +43,7 @@ class UserController extends Controller {
 		$this->validate($request, [
 			'name' => 'required',
 			'email' => 'required|unique:suppliers',
+			'password' => 'required|hash:bcrypt',
 		]);
 
 		User::create($request->all());

@@ -6,6 +6,7 @@ use App\Category;
 use App\Product;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
+use DB;
 
 class ProductController extends Controller
 {
@@ -56,6 +57,8 @@ class ProductController extends Controller
             'qty'           => 'required',
             'image'         => 'required',
             'category_id'   => 'required',
+            'desc'          => 'required',
+            'links'          => 'required'
         ]);
 
         $input = $request->all();
@@ -118,8 +121,10 @@ class ProductController extends Controller
             'nama'          => 'required|string',
             'harga'         => 'required',
             'qty'           => 'required',
-//            'image'         => 'required',
+            // 'image'         => 'required',
             'category_id'   => 'required',
+            'desc'          => 'required',
+            'links'         => 'required',
         ]);
 
         $input = $request->all();
@@ -179,11 +184,18 @@ class ProductController extends Controller
                 return '<img class="rounded-square" width="50" height="50" src="'. url($product->image) .'" alt="">';
             })
             ->addColumn('action', function($product){
-                return '<a href="#" class="btn btn-info btn-xs"><i class="glyphicon glyphicon-eye-open"></i> Show</a> ' .
+                return 
                     '<a onclick="editForm('. $product->id .')" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-edit"></i> Edit</a> ' .
                     '<a onclick="deleteData('. $product->id .')" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i> Delete</a>';
             })
             ->rawColumns(['category_name','show_photo','action'])->make(true);
 
     }
+
+    // public function detailProduk($id)
+    // {
+    //     $product = Product::findOrFail($id);
+        
+    // }
+
 }

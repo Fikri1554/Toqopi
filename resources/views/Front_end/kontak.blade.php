@@ -1,8 +1,17 @@
 @extends('Front_end/cs_index')
-@section('contentproduk')
-
-
-
+@section('index')
+    <div class="page-heading contact-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>contact us</h4>
+              <h2>let’s get in touch</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="find-us">
       <div class="container">
         <div class="row">
@@ -25,12 +34,14 @@
           <div class="col-md-4">
             <div class="left-content">
               <h4>About our office</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
+              <p>With the increasing growth of new coffee shops as well as a shift in the trend of 4th wave B2C coffee market opportunities. We are the 1st movement to support coffee shop and individual needs to meet their daily cup of coffee at the city.
+
+                We strive to simplify and streamline the process of purchasing all types of raw materials and tools at one door. And for future shifting end customer remote behavior, we support daily needs to make it easier make your own specialty coffee anywhere & anytime! Mix depends ur mood while saving coffee costs.
+
+                You can try specialty coffee brewing experience based on (gr) & (mL) assisted by our barista. In our memberships we can take care of your specialty coffee daily needed basic (reicipe, raw material and tools)</p>
               <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="https://www.instagram.com/toqopi/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://id.linkedin.com/company/toqopi"><i class="fa fa-linkedin"></i></a></li>
               </ul>
             </div>
           </div>
@@ -38,4 +49,4 @@
       </div>
     </div>
 
-    @endsection
+@endsection

@@ -50,9 +50,9 @@
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-lg-3 col-xs-6">
+    <!-- <div class="col-lg-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-red">
+        <!-- <div class="small-box bg-red">
             <div class="inner">
                 <h3>{{ \App\Customer::count() }}</h3>
 
@@ -62,17 +62,17 @@
                 <i class="fa fa-users"></i>
             </div>
             <a href="{{ route('customers.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> --> 
     <!-- ./col -->
 </div>
 
 
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-lg-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-navy">
+        <!-- <div class="small-box bg-navy">
             <div class="inner">
                 <h3>{{ \App\Sale::count() }}</h3>
 
@@ -83,7 +83,7 @@
             </div>
             <a href="{{ route('sales.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
-    </div>
+    </div> --> 
     <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
         <!-- small box -->
@@ -106,18 +106,18 @@
             <div class="inner">
                 <h3>{{ \App\Product_Masuk::count() }}</h3>
 
-                <p>Product In</p>
+                <p>Product Masuk</p>
             </div>
             <div class="icon">
                 <i class="fa fa-plus"></i>
             </div>
             <a href="{{ route('productsIn.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
-    </div>
+    </div> 
     <!-- ./col -->
-    <div class="col-lg-3 col-xs-6">
+    <!-- <div class="col-lg-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-gray">
+        <!-- <div class="small-box bg-gray">
             <div class="inner">
                 <h3>{{ \App\Product_Keluar::count()  }}</h3>
 
@@ -128,7 +128,7 @@
             </div>
             <a href="{{ route('productsOut.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
-    </div>
+    </div> --> 
     <!-- ./col -->
     <div id="container" class=" col-xs-6"></div>
 </div>

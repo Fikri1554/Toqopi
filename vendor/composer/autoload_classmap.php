@@ -2740,7 +2740,7 @@ return array(
     'PHPUnit\\Framework\\MockObject\\Matcher\\ConsecutiveParameters' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/ConsecutiveParameters.php',
     'PHPUnit\\Framework\\MockObject\\Matcher\\DeferredError' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/DeferredError.php',
     'PHPUnit\\Framework\\MockObject\\Matcher\\Invocation' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/Invocation.php',
-    'PHPUnit\\Framework\\MockObject\\Matcher\\InvokedAtIndex' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/InvokedAtIndex.php',
+    'PHPUnit\\Framework\\MockObject\\Matcher\\InvokedAtIndex' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/InvokedAt',
     'PHPUnit\\Framework\\MockObject\\Matcher\\InvokedAtLeastCount' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php',
     'PHPUnit\\Framework\\MockObject\\Matcher\\InvokedAtLeastOnce' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php',
     'PHPUnit\\Framework\\MockObject\\Matcher\\InvokedAtMostCount' => $vendorDir . '/phpunit/phpunit/src/Framework/MockObject/Matcher/InvokedAtMostCount.php',

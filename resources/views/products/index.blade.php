@@ -27,6 +27,8 @@
                     <th>QTY</th>
                     <th>Image</th>
                     <th>Category</th>
+                    <th>Description</th>
+                    <th>Link</th>
                     <th></th>
                 </tr>
                 </thead>
@@ -54,11 +56,11 @@
     {{--$('#items-table').DataTable()--}}
     {{--$('#example2').DataTable({--}}
     {{--'paging'      : true,--}}
-    {{--'lengthChange': false,--}}
-    {{--'searching'   : false,--}}
+    {{--'lengthChange': true,--}}
+    {{--'searching'   : true,--}}
     {{--'ordering'    : true,--}}
     {{--'info'        : true,--}}
-    {{--'autoWidth'   : false--}}
+    {{--'autoWidth'   : true--}}
     {{--})--}}
     {{--})--}}
     {{--</script>--}}
@@ -75,6 +77,8 @@
                 {data: 'qty', name: 'qty'},
                 {data: 'show_photo', name: 'show_photo'},
                 {data: 'category_name', name: 'category_name'},
+                {data: 'desc', name: 'desc'},
+                {data: 'links', name: 'links'},
                 {data: 'action', name: 'action', orderable: false, searchable: false}
             ]
         });
@@ -104,6 +108,8 @@
                     $('#harga').val(data.harga);
                     $('#qty').val(data.qty);
                     $('#category_id').val(data.category_id);
+                    $('#desc').val(data.desc);
+                    $('#links').val(data.links);
                 },
                 error : function() {
                     alert("Nothing Data");

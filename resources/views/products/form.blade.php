@@ -33,7 +33,7 @@
                             <input type="text" class="form-control" id="qty" name="qty"   required>
                             <span class="help-block with-errors"></span>
                         </div>
-
+                        
 
                         <div class="form-group">
                             <label >Image</label>
@@ -46,9 +46,19 @@
                             {!! Form::select('category_id', $category, null, ['class' => 'form-control select', 'placeholder' => '-- Choose Category --', 'id' => 'category_id', 'required']) !!}
                             <span class="help-block with-errors"></span>
                         </div>
+                        
+                        <div class="form-group">
+                            <label >Description</label>
+                            <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Enter ..."></textarea>
+                            <span class="help-block with-errors"></span>
+                        </div>
 
-
-
+                        <div class="form-group">
+                            <label>Link</label>
+                            <input type="text" class="form-control" id="links" name="links" placeholder="Enter ...">
+                            <span class="help-block with-errors"></span>
+                        </div>
+                        
 
                     </div>
                     <!-- /.box-body -->

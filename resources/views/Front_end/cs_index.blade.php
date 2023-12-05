@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <title>Toqopi Coffee Shop</title>
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="Produk/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Produk/assets/css/fontawesome.css">
     <link rel="stylesheet" href="Produk/assets/css/templatemo-sixteen.css">
@@ -16,21 +17,10 @@
   </head>
   <body>
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
-
-    <!-- Header -->
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
+  <header class="">
+      <nav class="navbar navbar-expand-md">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Toq<em>opi</em></h2></a>
+          <a class="navbar-brand" href="index.html"><h2>To<em>q</em>opi</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,42 +44,19 @@
       </nav>
     </header>
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
-          </div>
-        </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Banner Ends Here -->
+    
 
     
-       @yield('contentproduk')   
-
     
-    <footer>
+        @yield('index')
+
+      
+        <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2022 Toqopi Coffee Shop, Co.
+              <p>Copyright &copy; 2022 Toqopi Coffee Shop Co.</p>
             </div>
           </div>
         </div>
@@ -97,9 +64,17 @@
     </footer>
 
 
+
+   
+    
+    
+
     <!-- Bootstrap core JavaScript -->
     <script src="Produk/vendor/jquery/jquery.min.js"></script>
     <script src="Produk/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+   
+
 
 
     <!-- Additional Scripts -->
@@ -119,8 +94,43 @@
           t.style.color='#fff';
           }
       }
+
+      
+      
     </script>
 
+   <script type="text/javascript">
+    $('#myModal').modal('hide')
+
+    $(document).ready(function() {
+      $('.detail-btn').click(function() {
+        const id = $(this).attr('data-id');
+        // console.log(id);
+        $.ajax({
+          url: 'detailProduk/'+id,
+          type: 'GET',
+          data: {
+            'id': id,
+          },
+          success:function(data) {
+            console.log(data);
+            $('#product-nama').html(data.nama);
+            $('#product-image').html(data.image);
+            $('#product-desc').html(data.desc);
+          }
+        }); 
+      });
+    });
+   </script>
+
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 14556579;
+        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/14556579/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
 
   </body>
 
