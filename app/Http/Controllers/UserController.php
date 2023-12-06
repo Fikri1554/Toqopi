@@ -42,7 +42,7 @@ class UserController extends Controller {
 	public function store(Request $request) {
 		$this->validate($request, [
 			'name' => 'required',
-			'email' => 'required|unique:suppliers',
+			'email' => 'required|unique:users',
 			'password' => 'required|hash:bcrypt',
 		]);
 
@@ -50,7 +50,7 @@ class UserController extends Controller {
 
 		return response()->json([
 			'success' => true,
-			'message' => 'Suppliers Created',
+			'message' => 'User Created',
 		]);
 
 	}
@@ -86,7 +86,7 @@ class UserController extends Controller {
 	public function update(Request $request, $id) {
 		$this->validate($request, [
 			'name' => 'required|string|min:2',
-			'email' => 'required|string|email|max:255|unique:suppliers',
+			'email' => 'required|string|email|max:255|unique:users',
 		]);
 
 		$users = User::findOrFail($id);
@@ -95,7 +95,7 @@ class UserController extends Controller {
 
 		return response()->json([
 			'success' => true,
-			'message' => 'users Updated',
+			'message' => 'Users Updated',
 		]);
 	}
 
