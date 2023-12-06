@@ -5074,7 +5074,6 @@ return array(
     'UpdateHelper\\NotUpdateInterfaceInstanceException' => $vendorDir . '/kylekatarnls/update-helper/src/UpdateHelper/NotUpdateInterfaceInstanceException.php',
     'UpdateHelper\\UpdateHelper' => $vendorDir . '/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelper.php',
     'UpdateHelper\\UpdateHelperInterface' => $vendorDir . '/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelperInterface.php',
-    'UserTableSeeder' => $baseDir . '/database/seeds/UserTableSeeder.php',
     'UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert' => $vendorDir . '/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php',
     'UxWeb\\SweetAlert\\LaravelSessionStore' => $vendorDir . '/uxweb/sweet-alert/src/SweetAlert/LaravelSessionStore.php',
     'UxWeb\\SweetAlert\\SessionStore' => $vendorDir . '/uxweb/sweet-alert/src/SweetAlert/SessionStore.php',
